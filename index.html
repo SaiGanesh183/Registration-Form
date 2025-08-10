@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+
+
+        <form id="registrationForm" action="#" method="post">
+            <div class="Form_contents">
+                <div class="name_section flex margin ">
+                    <label for="fullName">Full Name:</label>
+                    <input  class="inputcontent"  type="text" id="fullName" name="fullName" required><br><br>
+                </div>
+
+                <div class="email_section flex margin ">
+                    <label for="emailAddress">Email:</label>
+                    <input class="inputcontent"    type="email" id="emailAddress" name="emailAddress" required><br><br>
+                </div>
+
+                <div class="password_section  flex margin ">
+
+                    <label for="userPassword">Password:</label>
+                    <input    class="inputcontent"   type="password" id="userPassword" name="userPassword" required><br><br>
+                </div>
+
+                <div class="DOB_section flex margin ">
+                    <label for="dateOfBirth">Date of Birth:</label>
+                    <input   class="inputcontent"   type="date" id="dateOfBirth" name="dateOfBirth" required>
+                </div>
+
+
+
+
+            </div>
+            <div class="flex1">
+                <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+                <p> I accept the terms and conditions </p>
+                </label><br><br>
+            </div>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <div class="container2">
+        <h2>Entries</h2>
+<table border="2" id="userTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Dob</th>
+      <th>Accepted terms?</th>
+    </tr>
+  </thead>
+  <tbody>
+ 
+  </tbody>
+</table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
